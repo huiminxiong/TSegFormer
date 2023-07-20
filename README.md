@@ -7,28 +7,3 @@ design a geometry-guided loss based on a novel point curvature to refine boundar
 time-consuming post-processing to reach clinically applicable segmentation.
 
 ![avatar](pipeline.png)
-
-## Usage
-
-### Requirements
-
-* python==3.7.11
-* torch==1.9.0+cu111
-* scikit-learn
-* tqdm
-
-### Data samples
-Two samples are shown in the `./data` folder: a mandible (lower jaw) sample and a maxillary (upper jaw) sample.
-
-### Training nad testing 
-Run the training script for pretraining:
-
-`python main.py --epochs 200 --num_points 10000`
-
-Run the evaluation script with the pretrained model `best_model.t7` for testing:
-
-`python main.py --eval True --model_path best_model.t7`
-
-## Citation
-
-If you find our work useful in your research, please consider citing:
