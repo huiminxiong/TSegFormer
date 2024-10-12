@@ -19,12 +19,14 @@ time-consuming post-processing to reach clinically applicable segmentation.
 * tqdm
 
 ### Training nad testing 
-Put the IOS dataset in the `./data` folder.
+Put the IOS dataset in the `./data` folder.  
+
 Run the training script for pretraining:
 
 `python main.py --epochs 200 --num_points 10000`
 
-The pre-trained model `best_model.t7` is saved in `./outputs/exp/models`.
+The pre-trained model `best_model.t7` is saved in `./outputs/exp/models`.  
+
 Run the evaluation script with the pretrained model `best_model.t7` for testing:
 
 `python main.py --eval True --model_path ./outputs/exp/models/best_model.t7`
